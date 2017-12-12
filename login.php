@@ -19,13 +19,31 @@ require_once "inc/config.php";
        <body>
                <div class="uk-section uk-container">
 	       <div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid>
-	       <?php echo "Hello world ! today is ";echo date('Y d m'); ?>
-	       <p>
-	       <a href="PHP-login-System/login.php">Login</a>
-	       <a href="PHP-login-System/register.php">Register</a>
-	       </p>
-	       </div>
-	       </div>
+	       <form class="js-login">
+
+		    <h2>Login</h2>
+
+		    <fieldset class="uk-fieldset">
+
+			<legend class="uk-legend">Email</legend>
+
+			<div class="uk-margin">
+			    <input class="uk-input" type="email" required="required" 				    placeholder="email@email.com">
+			</div>
+			<legend class="uk-legend">Password</legend>
+
+			<div class="uk-margin">
+			    <input class="uk-input" type="password" required="required" 			    placeholder="Your Password">
+			</div>
+			 <div class="uk-margin">
+			    <button class="uk-button uk-button-default" type="submit">Login</button>
+			</div>
+		       
+
+		    </fieldset>
+		</form>
+	        </div>
+		</div>
 	<?php require_once "inc/footer.php" ;?>
 	</body>
 </html>
